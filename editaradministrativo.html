@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Editar Administrativo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACTO</a>
+        </li>
+    </ul>
+</nav>
+<body>
+    <main>
+        <h1>EDITAR ADMINISTRATIVO</h1>
+        <div class="row">
+            <div class="container-fluid form-inline col-md-4 mx-auto">
+                <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="runAdm">RUN ADM:</label>
+                    <input type="number" class="form-control" id="runAdm">
+                </div>
+                <div class="form-group">
+                    <label for="nombresAdm">Nombres:</label>
+                    <input type="text" class="form-control" placeholder="Ingrese los nombres" id="nombresAdm">
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" class="form-control" placeholder="Ingrese los apellidos" id="apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control"  id="email">
+                </div>
+                <div class="form-group">
+                    <label for="area">Área:</label>
+                    <input type="text" class="form-control"  id="area">
+                </div>
+                <button id="btn-submit" type="submit" class="btn btn-primary">EDITAR</button>
+            </form>
+        </div>
+    </main>
+</body>

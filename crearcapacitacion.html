@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crear nuevo usuario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>    
+    </ul>
+</nav>
+<body>
+    <MAin>
+        <h1>CREAR NUEVA CAPACITACION</h1>
+        <div class="container-fluid form-inline col-md-8 offset-md-2">
+            <form action="/action_page.php">
+             
+                <div class="form-group">
+                    <label for="feCap">Fecha:</label>
+                    <input type="date" class="form-control"  id="feCap">
+                    <label for="horaCap">Hora:</label>
+                    <input type="time" class="form-control"  id="horaCap">
+                </div>
+                <div class="form-group">
+                    <label for="LugarCap">Lugar:</label>
+                    <input type="text" class="form-control" placeholder="Lugar de capacitación" id="LugarCap">
+                    <label for="duracionCap">Duración:</label>
+                    <input type="number" class="form-control col-2"  id="duracionCap">
+                </div>
+                <div class="form-group">
+                    <label for="nombreCliente">Cliente:</label>
+                    <input type="text" class="form-control" placeholder="Nombre de cliente" id="nombreCliente">
+                </div>
+                
+                <button id="btn-submit" type="submit" class="btn btn-primary ">CREAR</button>
+            </form>
+    </div>
+    </MAIN>
+</body>
+</html>
