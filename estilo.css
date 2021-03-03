@@ -1,28 +1,42 @@
-
-h1, h2{
-    padding: 3% ;
-    padding-top: 2%;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-
 nav{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
     background-color: rgb(6, 65, 175);
     color: rgb(255, 255, 255);
-    height: 60px;
-    line-height: 80px;    
+    height: 40px;
+    line-height: 50px;
+    border-width: 0px 0px 1.5px 0px;
+    border-style: inset;
+    border-color: black;
+}
+
+h1, h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 1%;
+}
+
+p{
+    font-size: 12px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: justify;
+    padding: 2%;
+    margin: 0;
 }
 
 a{
     margin: 10px;
-    padding: 20px;
+    padding: 1%;
     color: white;
 }
+
 a:hover{
     color: rgb(108, 108, 255);
     text-decoration: none;
@@ -32,18 +46,10 @@ body{
     text-align: center;
 }
 
-p{
-    font-size: 18px;
-    width: 100%;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: lighter;
-    text-align: justify;
-    padding: 10px;
-
-}
 label {
-    width: 150px;
-    text-align: right;
+    text-align: left;
+    width: 65px;
+    font-size: 14px;
   }​
 
 table, th, tr{
@@ -57,8 +63,15 @@ table, th, tr{
     padding-right: 30px;
 }
 
-.form-group{
-    padding: 5px;
+input.form-control{
+    max-width: 80%;
+    margin-left: 2%;
+    font-size: 14px;
+    height: 25px;
+}
+
+input.form-control::placeholder{
+    color: rgb(145, 145, 145);
 }
 
 .btn {
@@ -88,11 +101,34 @@ table, th, tr{
 .fa-pencil-alt:hover{
 color: rgb(124, 124, 240);
 }
-h2{
-    font-size: 20px;
-    text-align: left;
-    padding: 1%;
-    padding-top: 5%;
+
+
+@media (min-width: 500px){
+    h1, h2 {
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+    nav{
+        font-size: 20px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1050px){
+    h1, h2 {
+        font-size: 22px;
+    }
+    p{
+        font-size: 18px;
+        max-width: 80%;
+    }
+    nav{
+        font-size: 30px;
+        height: 80px;
+        line-height: 100px;
+    }
 }
 
 
